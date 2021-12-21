@@ -1,0 +1,28 @@
+﻿@model Booking.Models.ViewModels.SearchModel
+@using RazorClassLibrary
+
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="conteiner d-flex justify-content-center" mt-5>
+    <div class="card">
+        <h2 class="text-center pt-4 system-name"><strong>Booking</strong></h2>
+        <form asp-action="Search" asp-controller="Booking" asp-anti-forgery="true">
+            <div class="validation" asp-validation-summary="ModelOnly"></div>
+            <div class="form-group container">
+                <input type="text" asp-for="city" class="form-control form" placeholder="City" />
+                <span asp-validation-for="city" />
+                <input type="date" asp-for="beginDate" class="form-control form" placeholder="Begin date" />
+                <span asp-validation-for="beginDate" />
+                <input type="date" asp-for="endDate" class="form-control form" placeholder="End date" />
+                <span asp-validation-for="endDate" />
+                <input type="number" min="1" asp-for="seats" class="form-control form" placeholder="Seats" />
+                <span asp-validation-for="seats" />
+                <button type="submit" class="mt-2 mb-3 btn btn-lg btn-primary btn-block">Find</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<component type="typeof(Component1)" render-mode="ServerPrerendered" />

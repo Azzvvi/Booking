@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Booking.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\user\Desktop\Booking2\Booking\.idea\.idea.Booking\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

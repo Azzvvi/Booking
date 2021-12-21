@@ -1,0 +1,26 @@
+﻿@model Booking.Models.ViewModels.RegisterModel
+
+@{
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+
+<form class="form-signin" asp-action="Register" asp-controller="Account" asp-antiforgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    
+        <img class="mb-4" src="~/img/bootstrap-solid.svg" alt width="72" height="72" />
+        <h1 class="h3 mb-3 font-weight-normal">Register in here</h1>
+        <input type="text" asp-for="name" class="form-control" placeholder="Your name" />
+        <span asp-validation-for="name" />
+        <input type="text" asp-for="login" class="form-control" placeholder="Login" />
+        <span asp-validation-for="login" />
+        <input asp-for="password" class="form-control" placeholder="Password" />
+        <span asp-validation-for="password" />
+        <input asp-for="confirmPassword" class="form-control" placeholder="Confirm password" />
+        <span asp-validation-for="confirmPassword" />
+        <p class="mt-2 mb-3 text-muted">
+            Already have an account?
+            <a asp-action="Login" asp-controller="Account">Log in</a>
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+</form>
+

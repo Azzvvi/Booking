@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/RazorClassLibrary" Path="C:\Users\user\Desktop\Booking2\Booking\RazorClassLibrary\obj\Debug\net5.0\scopedcss\projectbundle\" />
+  <ContentRoot BasePath="_content/RazorClassLibrary" Path="C:\Users\user\Desktop\Booking2\Booking\RazorClassLibrary\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\user\Desktop\Booking2\Booking\Booking\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>
